@@ -20,9 +20,15 @@
               class="bg-green-300 p-2 rounded-md"
             >
               <div class="flex items-center">
-                <vs-radio success v-model="questionPerView.answer" :val="option.id">
-                  <span class="pl-1"> {{ option.choice }} </span>
-                </vs-radio>
+                <label class="inline-flex items-center">
+                  <input
+                    v-model="questionPerView.answer"
+                    :value="option.id"
+                    type="radio"
+                    class="h-5 w-5"
+                  />
+                  <span class="pl-2"> {{ option.choice }} </span>
+                </label>
               </div>
             </div>
             <!--  -->
