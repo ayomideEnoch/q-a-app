@@ -30,14 +30,15 @@
         <i class="fal fa-phone"></i>
       </template>
     </vs-input>
-
-    <button
-      @click="start"
-      :disabled="form.country !== '' && form.phoneNo !== '' ? false : true"
-      class="bg-green-600 text-white font-semibold text-xl shadow-md hover:bg-green-500 py-2 px-10 rounded-md mt-8"
-    >
-      Start
-    </button>
+    <div class="flex justify-center">
+      <button
+        @click="start"
+        :disabled="form.country !== '' && form.phoneNo !== '' ? false : true"
+        class="bg-green-600 text-white font-semibold text-xl shadow-md hover:bg-green-500 py-2 px-10 rounded-md mt-8"
+      >
+        Start
+      </button>
+    </div>
   </div>
 </template>
 
