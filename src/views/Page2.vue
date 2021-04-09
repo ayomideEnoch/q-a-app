@@ -5,7 +5,7 @@
       <i class="animate-spin fad fa-spinner"></i>
     </div>
     <div v-if="!loading">
-      <div class="lg:flex block justify-between text-lg mb-5">
+      <div class="text-center lg:flex justify-between text-lg mb-5">
         <p class="">You have {{ questions.length }} Total Questions.</p>
         <p>Time Remaining: {{ timerCounter }} seconds</p>
       </div>

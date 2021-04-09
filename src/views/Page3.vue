@@ -2,11 +2,11 @@
   <div class="lg:w-3/4 w-full">
     <div class="text-center text-xl">
       <p class="text-4xl mb-5">RESULT SUMMARY</p>
-      <div class="lg:flex block">
+      <div class="lg:flex justify-center text-center">
         <p>
           Country: <b>{{ candidateDetails.country }} </b>
         </p>
-        <p class="lg:pl-5 pl-0">
+        <p class="lg:pl-8 pl-0">
           Phone Number: <b>{{ candidateDetails.phoneNo }}</b>
         </p>
       </div>
