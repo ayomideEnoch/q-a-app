@@ -126,7 +126,7 @@ export default {
   },
 
   async beforeMount() {
-    let proxy = "https://cors-anywhere-origin.herokuapp.com/";
+    // let proxy = "https://cors-anywhere-origin.herokuapp.com/";
     let url = "https://q-a-api.netlify.app/question.json";
 
     await axios.get(proxy + url).then((response) => {
