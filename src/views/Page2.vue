@@ -127,8 +127,7 @@ export default {
 
   async beforeMount() {
     let proxy = "https://cors-anywhere-origin.herokuapp.com/";
-    let url =
-      "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d24f646e-9ba9-45ba-a142-4fdd1f2368e4/questions.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210409%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210409T075109Z&X-Amz-Expires=86400&X-Amz-Signature=426c18719fe29bec1b30e9fd67ad0a401c2786e34d3872d6990b9b8269421a35&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22questions.json%22";
+    let url = "https://q-a-api.netlify.app/question.json";
 
     await axios.get(proxy + url).then((response) => {
       this.questions = response.data.data;
